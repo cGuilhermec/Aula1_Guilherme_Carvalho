@@ -7,34 +7,48 @@
 </head>
 <body>
     <div>
-        <ol>
-            <li><a href="exercicio01.html" target="_blank"> Exercicio 1</a></li>
-            <li><a href="exercicio02.html" target="_blank"> Exercicio 2</a></li>
-            <li><a href="exercicio03.html" target="_blank"> Exercicio 3</a></li>
-            <li><a href="exercicio04.html" target="_blank"> Exercicio 4</a></li>
-            <li><a href="exercicio05.html" target="_blank"> Exercicio 5</a></li>
-            <li><a href="exercicio06.html" target="_blank"> Exercicio 6</a></li>
-            <li><a href="exercicio07.html" target="_blank"> Exercicio 7</a></li>
-            <li><a href="exercicio08.html" target="_blank"> Exercicio 8</a></li>
-            <li><a href="exercicio09.html" target="_blank"> Exercicio 9</a></li>
-        </ol> 
+        <button><a href="exercicio01.html" target="_blank"> Exercicio 1</a></button>
+        <button><a href="exercicio02.html" target="_blank"> Exercicio 2</a></button>
+        <button><a href="exercicio03.html" target="_blank"> Exercicio 3</a></button>         
+    </div>
+    <div>
+        <button><a href="exercicio04.html" target="_blank"> Exercicio 4</a></button>
+        <button><a href="exercicio05.html" target="_blank"> Exercicio 5</a></button>
+        <button><a href="exercicio06.html" target="_blank"> Exercicio 6</a></button>
+    </div>
+    <div>
+        <button><a href="exercicio07.html" target="_blank"> Exercicio 7</a></button>
+        <button><a href="exercicio08.html" target="_blank"> Exercicio 8</a></button>
+        <button><a href="exercicio09.html" target="_blank"> Exercicio 9</a></button>
     </div>
     
 </body>
 <style>
-    *{
-        background-color: rgb(0, 0, 0);
+    body{
+        background-color: #9B5DB4;
+    }
+    a{
         color: white;
-        font-size: 30px;
+        font-size: 25px;
         text-decoration: none;
     }
     div{
         display: flex;
         justify-content: center;
-        margin-top: 25vh;
+        justify-content: space-around;
+        margin: 10vh;
     }
     a:hover{
-        color: rgb(172, 172, 249);
+        color: rgb(255, 70, 70);
+    }
+    button{
+        background-color: #F69232;
+        height: 100px;
+        width: 360px;
+        border-radius: 9px;
+    }
+    button:hover{
+        background-color: #ffbe82;
     }
 </style>
 </html>

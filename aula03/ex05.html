@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Peso</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody class="um">
+                <tr>
+                    <td>Ana Paula</td>
+                    <td>57.5</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Vera</td>
+                    <td>55.9</td>
+                    <td>27</td>
+                </tr>
+            </tbody>    
+        </table>
+    </div>
+</body>
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    body{
+        color: white;
+        background-color: black;
+    }
+    thead, tbody{
+        border-bottom: 5px solid white;
+    }
+    th, td{
+        padding: 20px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 50px;
+    }
+    .um tr:hover{
+        background-color: #87cefa;
+    }
+</style>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="div"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+<style>
+    body {
+        /* height: 100vh; */
+        margin: 0;
+    }
+    .container{
+        display: flex;
+        flex-flow: column;
+        height: 100vh;
+    }
+
+    .container .header{
+        /* flex-grow: 0; */
+        flex-basis: 10vh;
+        background-color: white;
+    }
+
+    .container .div {
+        flex-grow: 2;
+        padding: auto;
+        /* flex-basis: auto; */
+        background-color: gray;
+    }
+
+    .container .footer {
+        /* flex-grow: 0.1; */
+        padding-top: 15vh;
+        /* flex-basis: 10vh; */
+        background-color: white;
+    }
+</style>
+</html>

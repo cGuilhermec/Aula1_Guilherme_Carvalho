@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="itensHeader">
+                <img src="./imagens/html.png" style="height: 100px;">
+                <h1>CSS3</h1>
+            </div>
+            <div class="itensHeader">
+                <h1>Bill Gates</h1>
+                <img src="./imagens/avatar.jpg" style="padding-right: 20px;" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="first"></div>
+            <div class="second"></div>
+        </div>
+        <div class="footer">
+            <img src="./imagens/Fatec.png" alt="">
+            <img src="./imagens/Brasao.png" alt="">
+            <img src="./imagens/CPS.png" alt="">
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        font-family: calibri;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header{
+        background-color: white;
+        margin: 2vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .itensHeader{
+        display: flex;
+    }
+    .content{
+        display: flex;
+        flex-grow: 1;
+    }
+    .first{
+        background-color: yellow;
+        flex-grow: 1;
+    }
+    .second{
+        background-color: cyan;
+        flex-grow: 2;
+    }
+    .footer{
+        background-color: white;
+        margin: 2vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    img{
+        height: 100px;
+    }
+
+</style>
+</html>

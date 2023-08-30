@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./imagens/html.png" style="height: 100px;">
+            <h1>CSS3</h1>
+        </div>
+        <div class="content"></div>
+        <div class="footer">
+            <img src="./imagens/Fatec.png" alt="">
+            <img src="./imagens/Brasao.png" alt="">
+            <img src="./imagens/CPS.png" alt="">
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .header {
+        padding: 10px;
+        /* flex-basis: 15vh; */
+        background-color: white;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 80px;
+        margin: 0;
+    }
+
+    .content {
+        background-color: gray;
+        flex-grow: 1;
+    }
+
+    img {
+        height: 80px;
+    }
+
+    .footer {
+        padding: 4vh;
+        background-color: white;
+
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+</html>

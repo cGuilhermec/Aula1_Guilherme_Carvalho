@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="content"></div>
+        <div class="footer">
+            <img src="./imagens/Fatec.png" alt="">
+            <img src="./imagens/Brasao.png" alt="">
+            <img src="./imagens/CPS.png" alt="">
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header {
+        flex-basis: 15vh;
+        padding: auto;
+        background-color: white;
+    }
+    .content {
+        flex-grow: 1;
+        background-color: grey;
+        padding: auto;
+    }
+    img {
+        height: 100px;
+    }
+    .footer {
+        padding: 2vh;
+        background-color: white;
+        
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+</style>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="itensHeader">
+                <img src="./imagens/html.png" style="height: 100px;">
+            <h1>CSS3</h1>
+            </div>
+            <div class="itensHeader">
+                <h1>Bill Gates</h1>
+                <img src="./imagens/avatar.jpg" style="padding-right: 20px;" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="formulario">
+                <form action="">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div>
+                            <label for="email">E-mail</label><br>
+                            <input type="email" id="email" placeholder="carlos@gamil.com">
+                        </div>
+                        <div>
+                            <label for="password">Senha</label><br>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="botoes">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="./imagens/Fatec.png" alt="">
+            <img src="./imagens/Brasao.png" alt="">
+            <img src="./imagens/CPS.png" alt="">
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        font-family: calibri;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header {
+        background-color: white;
+        margin: 2vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .itensHeader {
+        display: flex;
+        align-items: center;
+    }
+    .content {
+        background-color: rgb(56, 56, 56);
+        flex-grow: 1;
+    }
+    .formulario {
+        color: white;
+        display: flex;
+        margin-top: 10vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botoes {
+        display: flex;
+        justify-content: flex-end;
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        background-color: white;
+        margin: 3vh;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    input {
+        font-size: 30px;
+        padding-right: 20vh;
+        border-radius: 5px;
+    }
+    legend, label {
+        font-size: 40px;
+    }
+    button {
+        padding-right: 3vh;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+        background-color: rgb(69, 69, 254);
+        border-radius: 5px;
+        color: white;
+    }
+    h1 {
+        font-size: 80px;
+        margin: 0;
+    }
+    img{
+        height: 100px;
+    }
+</style>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex10</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="itensHeader">
+                <img src="./imagens/css.png" alt="">
+                <h1>CSS3</h1>
+            </div>
+            <div class="itensHeader">
+                <h1>Bill Gates</h1>
+                <img src="./imagens/avatar.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="first">
+                <div class="first-one">
+                    <a href="./ex01.html">Exercicio 01</a>
+                    <a href="./ex02.html">Exercicio 02</a>
+                    <a href="./ex03.html">Exercicio 03</a>
+                    <a href="./ex04.html">Exercicio 04</a>
+                    <a href="./ex05.html">Exercicio 05</a>
+                    <a href="./ex06.html">Exercicio 06</a>
+                    <a href="./ex07.html">Exercicio 07</a>
+                    <a href="./ex08.html">Exercicio 08</a>
+                </div>
+                <div class="first-second">
+                    <img src="./imagens/html.png" alt="">
+                </div>
+                
+            </div>
+            <div class="second">
+                <form class="formulario">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div>
+                            <label for="e-mail">E-mail</label><br>
+                            <input type="email" id="e-mail">
+                        </div>
+                        <div>
+                            <label for="password">Senha</label><br>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="botoes">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="./imagens/Fatec.png" alt="">
+            <img src="./imagens/Brasao.png" alt="">
+            <img src="./imagens/CPS.png" alt="">
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        margin: 0;
+        font-family: calibri;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header{
+        display: flex;
+        margin: 1vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .itensHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+    .formulario{
+        color: white;
+        display: flex;
+        margin-top: 10vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        display: flex;
+        flex-grow: 1;
+    }
+    .first{
+        background-color: rgb(61, 61, 61);
+        flex-grow: 1;
+    }
+    .first-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-second{
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .second{
+        background-color: rgb(61, 61, 61);
+        flex-grow: 2;
+    }
+    .footer{
+        margin: 1vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+
+    input {
+        font-size: 30px;
+        padding-right: 20vh;
+        border-radius: 5px;
+    }
+    legend, label {
+        font-size: 40px;
+    }
+    button {
+        padding-right: 3vh;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+        background-color: rgb(69, 69, 254);
+        border-radius: 5px;
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0;
+        color: blue;
+        border-bottom: 3px solid blue;
+        margin-bottom: 20px;
+    }
+    a:hover {
+        border-bottom: 3px solid red;
+        color: red;
+    }
+    img{
+        height: 100px;
+    }
+    h1{
+        font-size: 80px;
+        margin: 0;
+    }
+</style>
+</html>
